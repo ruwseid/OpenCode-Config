@@ -1,0 +1,112 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "disabled_providers": [],
+  "provider": {
+    "uni-desktop": {
+      "name": "Uni-Desktop",
+      "npm": "@ai-sdk/openai-compatible",
+      "options": {
+        "baseURL": "http://192.168.13.22:11434/v1"
+      },
+      "models": {
+        "my-ornith-35b_ctx16k": {
+          "name": "MyOrnith:35B_CTX16B",
+          "limit": {
+            "context": 16384,
+            "output": 8192
+          }
+        },
+        "my-ornith-35b_ctx32k": {
+          "name": "MyOrnith:35B_CTX32B",
+          "limit": {
+            "context": 32768,
+            "output": 8192
+          }
+        },
+        "my-ornith-35b_ctx64k": {
+          "name": "MyOrnith:35B_CTX64B",
+          "limit": {
+            "context": 65536,
+            "output": 8192
+          }
+        },
+        "my-ornith-9b_ctx16k": {
+          "name": "MyOrnith:9B_CTX16B",
+          "limit": {
+            "context": 16384,
+            "output": 8192
+          }
+        },
+        "my-ornith-9b_ctx32k": {
+          "name": "MyOrnith:9B_CTX32B",
+          "limit": {
+            "context": 32768,
+            "output": 8192
+          }
+        },
+        "my-ornith-9b_ctx64k": {
+          "name": "MyOrnith:9B_CTX64B",
+          "limit": {
+            "context": 65536,
+            "output": 8192
+          }
+        },
+        "my-gemma4-12b_ctx16k": {
+          "name": "MyGemma4:12B_CTX16B",
+          "limit": {
+            "context": 16384,
+            "output": 8192
+          }
+        },
+        "my-gemma4-12b_ctx32k": {
+          "name": "MyGemma4:12B_CTX32B",
+          "limit": {
+            "context": 32768,
+            "output": 8192
+          }
+        },
+        "my-gemma4-12b_ctx64k": {
+          "name": "MyGemma4:12B_CTX64B",
+          "limit": {
+            "context": 65536,
+            "output": 8192
+          }
+        },
+        "my-gemma4-26b-a4b_ctx16k": {
+          "name": "MyGemma4:26B-A4B_CTX16B",
+          "limit": {
+            "context": 16384,
+            "output": 8192
+          }
+        },
+        "my-gemma4-26b-a4b_ctx32k": {
+          "name": "MyGemma4:26B-A4B_CTX32B",
+          "limit": {
+            "context": 32768,
+            "output": 8192
+          }
+        },
+        "my-gemma4-26b-a4b_ctx64k": {
+          "name": "MyGemma4:26B-A4B_CTX64B",
+          "limit": {
+            "context": 65536,
+            "output": 8192
+          }
+        }
+      }
+    }
+  },
+  "mcp": {
+    "searxng": {
+      "type": "remote",
+      "url": "http://192.168.13.55:3000/mcp",
+      "enabled": true,
+      "oauth": false,
+      "headers": {
+        "Authorization": "Bearer {file:~/.config/opencode/secrets/searxng-mcp-token}"
+      },
+      "timeout": 10000
+    }
+  },
+  "shell": "zsh"
+}
