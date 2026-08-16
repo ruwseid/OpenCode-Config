@@ -10,84 +10,84 @@
       },
       "models": {
         "my-ornith-35b_ctx16k": {
-          "name": "MyOrnith:35B_CTX16B",
+          "name": "MyOrnith:35B_CTX16K",
           "limit": {
             "context": 16384,
             "output": 8192
           }
         },
         "my-ornith-35b_ctx32k": {
-          "name": "MyOrnith:35B_CTX32B",
+          "name": "MyOrnith:35B_CTX32K",
           "limit": {
             "context": 32768,
             "output": 8192
           }
         },
         "my-ornith-35b_ctx64k": {
-          "name": "MyOrnith:35B_CTX64B",
+          "name": "MyOrnith:35B_CTX64K",
           "limit": {
             "context": 65536,
             "output": 8192
           }
         },
         "my-ornith-9b_ctx16k": {
-          "name": "MyOrnith:9B_CTX16B",
+          "name": "MyOrnith:9B_CTX16K",
           "limit": {
             "context": 16384,
             "output": 8192
           }
         },
         "my-ornith-9b_ctx32k": {
-          "name": "MyOrnith:9B_CTX32B",
+          "name": "MyOrnith:9B_CTX32K",
           "limit": {
             "context": 32768,
             "output": 8192
           }
         },
         "my-ornith-9b_ctx64k": {
-          "name": "MyOrnith:9B_CTX64B",
+          "name": "MyOrnith:9B_CTX64K",
           "limit": {
             "context": 65536,
             "output": 8192
           }
         },
         "my-gemma4-12b_ctx16k": {
-          "name": "MyGemma4:12B_CTX16B",
+          "name": "MyGemma4:12B_CTX16K",
           "limit": {
             "context": 16384,
             "output": 8192
           }
         },
         "my-gemma4-12b_ctx32k": {
-          "name": "MyGemma4:12B_CTX32B",
+          "name": "MyGemma4:12B_CTX32K",
           "limit": {
             "context": 32768,
             "output": 8192
           }
         },
         "my-gemma4-12b_ctx64k": {
-          "name": "MyGemma4:12B_CTX64B",
+          "name": "MyGemma4:12B_CTX64K",
           "limit": {
             "context": 65536,
             "output": 8192
           }
         },
         "my-gemma4-26b-a4b_ctx16k": {
-          "name": "MyGemma4:26B-A4B_CTX16B",
+          "name": "MyGemma4:26B-A4B_CTX16K",
           "limit": {
             "context": 16384,
             "output": 8192
           }
         },
         "my-gemma4-26b-a4b_ctx32k": {
-          "name": "MyGemma4:26B-A4B_CTX32B",
+          "name": "MyGemma4:26B-A4B_CTX32K",
           "limit": {
             "context": 32768,
             "output": 8192
           }
         },
         "my-gemma4-26b-a4b_ctx64k": {
-          "name": "MyGemma4:26B-A4B_CTX64B",
+          "name": "MyGemma4:26B-A4B_CTX64K",
           "limit": {
             "context": 65536,
             "output": 8192
@@ -96,6 +96,10 @@
       }
     }
   },
+  "plugin": [
+    "superpowers@git+https://github.com/obra/superpowers.git",
+    "@dietrichgebert/ponytail"
+  ],
   "mcp": {
     "searxng": {
       "type": "remote",
